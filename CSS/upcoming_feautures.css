@@ -1,0 +1,69 @@
+.top-nav-bar {
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between; /* Adds space between items */
+    align-items: center; /* Vertically centers the elements */
+    width: 50%; /* Adjust width as needed to fit design */
+    margin: 0 auto; /* Centers the entire nav bar on the page */
+    margin-bottom: 3%;
+}
+.top-nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+.top{
+    width:30vw;
+    padding-left: 40%;   
+    color:white;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image:url(../Img/hubble_bg_img.jpg) ;
+    height: 100%;
+    width: 100%;
+    background-size: cover; /*makes the image cover the entire background*/
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+}
+.upper-left, .upper-middle2 {
+    border: 1px solid white;
+    width: 20vw;
+    height: 47vh;
+    text-align: center;
+    margin-left: 2%;
+    padding: 10px;
+    background-color: white;
+    background-image: url(../Img/container-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.upper-middle, .upper-right{
+    border: 1px solid white;
+    width: 20vw;
+    height: 47vh;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 10%;
+    padding: 10px;
+    background-color: white;
+    background-image: url(../Img/container-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.upper-part {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#logo{
+    border-radius: 50%;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(../Img/hubble_bg_img.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .top-img img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+        }
+
+        .txt {
+            width: 55%; /* Adjust to balance with the image section */
+            padding: 20px;
+            line-height: 1.6;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+            border: 2px solid rgb(0, 0, 0);
+            background-color: #050505;
+            color: white;
+        }
+
+        .container-right {
+            width: 40%; /* Adjust width to ensure the right section aligns */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-right img {
+            max-width: 100%;
+            border-radius: 50%;
+            height: auto;
+            border: 1px solid black;
+        }
+
+        .container-right h4,h2 {
+            text-align: center;
+            padding: 10px;
+            line-height: 1.3;
+            background-color: #0a0a0a;
+        }
+        .top-nav-bar {
+            color:white;   
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: space-between; /* Adds space between items */
+            align-items: center; /* Vertically centers the elements */
+            width: 50%; /* Adjust width as needed to fit design */
+            margin: 0 auto; /* Centers the entire nav bar on the page */
+            margin-bottom: 3%;
+       }
+       .top-nav-bar a{
+        color:white;
+        text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="top-nav-bar"> 
+            <img src="../Img/Galactic_lens_logo.png" alt="Logo" height="60">
+            <h5><a href="./Hubble.html">Home</a></h5>
+            <h5><a href="./key_feautures.html">Key Feautures</a></h5>
+            <h5><a href="./upcoming_feautures.html">Upocoming Feautures</a></h5>
+            <h5><a href="./vision.html">Vision</a></h5>
+            <h5><a href="./About.html">About</a></h5>
+        </div>
+    </div>
+    <div class="top-img">
+        <img src="https://www.nasa.gov/wp-content/uploads/2023/01/webb-tarantula-neb.png?w=1536" alt="Hubble_telescope">
+    </div>
+    <div class="container">
+        <div class="txt">
+            <h2>About the Hubble Space Telescope</h2>
+            <p>
+                Launched on April 24, 1990, aboard the Space Shuttle Discovery, the Hubble Space Telescope has transformed our understanding of the universe. Positioned 547 kilometers (340 miles) above Earth’s surface, it orbits the planet free from atmospheric distortion, allowing it to capture breathtakingly detailed images of distant galaxies, nebulae, and stars.
+            </p>
+            <p>
+                Named after the American astronomer Edwin Hubble, the telescope has played a pivotal role in many groundbreaking discoveries. From observing the expansion of the universe to detecting exoplanets, Hubble has unlocked the mysteries of space for over three decades. Its data and images have revolutionized fields of study such as cosmology, astrophysics, and planetary science, providing invaluable insights into the origins and fate of our universe.
+            </p>
+            <p>
+                With its ability to observe the cosmos across a range of wavelengths — from ultraviolet to visible and near-infrared light — Hubble has been instrumental in exploring the early universe, capturing light from objects that existed billions of years ago. Its famous Deep Field images have offered glimpses into the farthest reaches of the cosmos, showing galaxies as they were when the universe was just a fraction of its current age.
+            </p>
+            <p>
+                Beyond its scientific contributions, the Hubble Space Telescope has inspired people around the world with its stunning imagery of celestial wonders, sparking curiosity and a sense of wonder about the vastness of space. Even as new observatories like the James Webb Space Telescope come online, Hubble’s legacy as a trailblazing explorer of the universe will endure for generations to come.
+            </p>
+        </div>
+        <div class="container-right">
+            <img src="https://cdn.britannica.com/60/198560-050-11888CDF/Edwin-Hubble-1931.jpg?w=300" alt="founder">
+            <h2>
+                Edwin Hubble
+            </h2>
+            <h4>
+                Edwin Hubble,for whom the Hubble Space Telescope is named, was one of the leading astronomers of the twentieth century. His discovery in the 1920s that countless galaxies exist beyond our own Milky Way galaxy revolutionized our understanding of the universe and our place within it.
+            </h4>
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle the Home button logic
+        const homeButton = document.getElementById('homeButton');
+
+        homeButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+
+            if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                // If the user is already on the home page, refresh it
+                window.location.reload();
+            } else {
+                // Otherwise, navigate to the home page
+                window.location.href = '/';
+            }
+        });
+    </script>
+</body>
+</html>

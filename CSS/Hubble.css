@@ -1,0 +1,293 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    min-width: 100vw;
+    min-height: 100vh;
+    cursor:url(../Img/cursor.png),auto;
+}
+.body{
+    background-color: transparent;
+    width:100vw;
+    height:100vh;
+    overflow-y: auto;
+}
+.top-nav-bar {
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between; /* Adds space between items */
+    align-items: center; /* Vertically centers the elements */
+    width: 50%; /* Adjust width as needed to fit design */
+    margin: 0 auto; /* Centers the entire nav bar on the page */
+    margin-bottom: 3%;
+}
+.top-nav-bar a{
+    text-decoration: none;
+}
+.bg-img{
+    background-image: url(../Img/hubble_bg_img.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover; /*makes the image cover the entire background*/
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.vdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.vdo video {
+    width: 100%; /* Fills the container width */
+    max-height: 60vh; /* Limits the video height to 60% of the viewport height */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+*{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.new{
+    width: 20vw;
+    padding-left: 40%;
+    text-align: center;
+}
+#but{
+    border:1px solid transparent;
+    background-color: transparent;
+    border-radius: 29px;
+    color: aliceblue;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-color: white;
+    margin:10px;
+    width: 8%;
+}
+#but:hover{
+    color: black;
+    background-color: white;
+}
+.container{    
+    margin: 20px 0 0 100px;
+    width:80%;
+    height:550px;
+    display: flex;
+    justify-content:center;
+    gap:10px;
+    padding-right: 40px;
+}
+.container img{
+    width: 18%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border:2px solid rgba(15, 15, 15, 0.684);;
+    transition: ease-in-out 0.5s;
+}
+.container img:hover{
+    width: 35%;
+    height:90% ;
+}
+.spotlight h2{
+    padding-left:40px;
+}
+.img-container{
+    background-image: url(../Img/hubble.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border:2px solid rgba(15, 15, 15, 0.684);;
+    transition: ease-in-out 0.5s;
+}
+.img-container:hover{
+    width: 35%;
+    height:90% ;
+}
+.zoom-vdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.zoom-vdo video {
+    width: 100%; /* Fills the container width */
+    max-height: 60vh; /* Limits the video height to 60% of the viewport height */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+
+.telescope-text{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:20px;
+    font-style: normal;
+    padding: 20px;
+    line-height: 1.6;
+}
+.telescope-text h2{
+    width: 50vw;
+    padding-left: 30%;
+    line-height: 1.5;
+    text-shadow: 0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan;
+    color:white;
+    text-align: center;
+}
+.telescope-text{
+    text-align: center;
+}
+.footer{
+    background-image: url(../Img/foorter\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.bg img{
+    margin:2%;
+}
+.footer-content{
+    margin:2%;
+}
+.footer-content a{
+    text-decoration: none;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social-media{
+    margin-left: 45%;
+    margin-top:5%;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.rosette, .eagle {
+    border: 1px solid white;
+    width: 20vw;
+    height: 57vh;
+    text-align: center;
+    margin-left: 2%;
+    padding: 20px;
+    background-color: white;
+    background-image: url(../Img/container-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.hubble, .elephant{
+    border: 1px solid white;
+    width: 20vw;
+    height: 55vh;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: white;
+    background-image: url(../Img/container-bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.spotlight-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 1%;
+}
+.wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the container take the full viewport height */
+    width: 100vw; /* Makes the container take the full viewport width */
+}
+
+.wrapper {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    animation: BgAnimation 20s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes BgAnimation {
+    0% { 
+        background-image: url(../Img/slide\ hubble\ 1.jpg); 
+        transform: scale(1); 
+        opacity: 1;
+    }
+    25% { 
+        background-image: url(../Img/slide\ hubble\ 1.jpg); 
+        transform: scale(1.1); /* Slight zoom */
+        opacity: 0.5; /* Start fading */
+    }
+    30% { 
+        background-image: url(../Img/slide\ hubble\ 2.jpg); 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    55% { 
+        background-image: url(../Img/slide\ hubble\ 2.jpg); 
+        transform: scale(1.1);
+        opacity: 0.5; 
+    }
+    60% { 
+        background-image: url(../Img/slide\ hubble\ 3.jpg); 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    85% { 
+        background-image: url(../Img/slide\ hubble\ 3.jpg); 
+        transform: scale(1.1); 
+        opacity: 0.5;
+    }
+    90% { 
+        background-image: url(../Img/slide\ hubble\ 4.jpg); 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    100% { 
+        background-image: url(../Img/slide\ hubble\ 4.jpg); 
+        transform: scale(1.1); 
+        opacity: 0.5;
+    }
+}
+
