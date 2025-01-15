@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Features</title>
+    <style>
+
+body {
+    background-image: url(../Img/hubble_bg_img.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top {
+    text-align: center;
+}
+
+.top h1 {
+    margin-bottom: 10px;
+}
+
+.upper-part, .lower-part {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Adds a larger gap between the cards */
+    margin: 20px 0;
+}
+
+.card {
+    width: 20vw;
+    background-color: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    box-sizing: border-box; /* Ensure padding doesn't affect the size */
+    padding: 15px; /* Adds padding inside the card for content spacing */
+    margin: 10px; /* Adds margin around the card for spacing */
+}
+
+.card .image-box {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to maintain uniform size */
+    margin-bottom: 10px; /* Adds space between the image and content */
+    filter: grayscale(5);
+}
+
+.card .image-box img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio of the image */
+    object-position: center;
+    object-fit: cover; /* Ensure the image fits without distortion */
+    border-radius: 8px; /* Adds rounded corners to the images */
+}
+
+.card .content {
+    padding: 10px;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover img {
+    filter: grayscale(0.5) brightness(0.9);
+}
+
+.card::after {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover::after {
+    border-color: #e0e0e0;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation Bar */
+.top-nav-bar {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+
+.top-nav-bar a {
+    color:white;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="top-nav-bar"> 
+        <img src="../Img/Galactic_lens_logo.png" alt="Logo" height="100">
+        <h5><a href="./Hubble.html">Home</a></h5>
+        <h5><a href="./key_feautures.html">Key Feautures</a></h5>
+        <h5><a href="./upcoming_feautures.html">Upocoming Feautures</a></h5>
+        <h5><a href="./vision.html">Vision</a></h5>
+        <h5><a href="./About.html">About</a></h5>
+    </div>
+    <div class="top">
+        <h1>Key Features</h1>
+        <hr>
+    </div>
+    <div class="upper-part">
+        <div class="card">
+            <div class="image-box">
+                <img src="../Img/deep_space.jpg" alt="Deep Space Image">
+            </div>
+            <div class="content">
+                <p>Hubble has captured some of the most distant objects ever observed, such as the Hubble Deep Field images, offering a glimpse into the early universe.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="../Img/data sharing.jpg" alt="Data Sharing">
+            </div>
+            <div class="content">
+                <p>The data and images collected by Hubble are freely accessible to the public and scientific community, contributing to countless research projects worldwide.</p>
+            </div>
+        </div>
+
+        <!-- Major Discoveries card with grayscale effect -->
+        <div class="card major-discoveries">
+            <div class="image-box">
+                <img src="../Img/major_discovories.jpg" alt="Major Discoveries">
+            </div>
+            <div class="content">
+                <p>Hubble has contributed to major discoveries in our understanding of the universe.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-part">
+        <div class="card">
+            <div class="image-box">
+                <img src="../Img/hd.jpg" alt="High Definition">
+            </div>
+            <div class="content">
+                <p>Hubble's advanced optical system captures high-resolution images of distant galaxies, nebulae, and star clusters.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="../Img/loc.jpg" alt="Location in Space">
+            </div>
+            <div class="content">
+                <p>Positioned 547 kilometers (340 miles) above Earth, Hubble avoids atmospheric distortion, providing clearer and more detailed images.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="../Img/multi_wavelength.jpg" alt="Multi Wavelength">
+            </div>
+            <div class="content">
+                <p>Hubble observes space in a range of wavelengths, including visible, ultraviolet, and near-infrared light.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle the Home button logic
+        const homeButton = document.getElementById('homeButton');
+
+        homeButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+
+            if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                // If the user is already on the home page, refresh it
+                window.location.reload();
+            } else {
+                // Otherwise, navigate to the home page
+                window.location.href = '/';
+            }
+        });
+    </script>
+</body>
+</html>
